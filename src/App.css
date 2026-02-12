@@ -1,1 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@200..1000&family=Nunito+Sans:ital,wght@200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @import "tailwindcss";
+
+/* 1. TEMA AYARLARI (Renkler, Fontlar, Breakpointler) */
+@theme {
+  /* --- SCREENS (Ekranlar) --- */
+  --breakpoint-mobile: 400px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1280px;
+
+  /* --- FONT FAMILY --- */
+  /* Varsayılan sans ailesini de güncelliyoruz */
+  --font-sans: "Nunito", system-ui, sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+
+  /* --- COLORS (Renkler) --- */
+  /* Neutral */
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-100: #F6F5F1;
+  --color-neutral-200: #E0E6E3;
+  --color-neutral-300: #D0DCD9;
+  --color-neutral-800: #395852;
+  --color-neutral-900: #163A34;
+
+  /* Diğerleri */
+  --color-orang-500: #FE9F6B;
+  --color-teal-500: #49AC9B;
+  --color-indigo-500: #697DDB;
+
+  /* Preset Değişkenleri */
+  --font-size-preset-1: 72px;
+  --font-size-preset-1-tablet: 64px;
+  --font-size-preset-1-mobile: 52px;
+  --font-size-preset-2: 48px;
+  --font-size-preset-2-mobile: 40px;
+  --font-size-preset-3: 32px;
+  --font-size-preset-4: 24px;
+  --font-size-preset-5: 20px;
+  --font-size-preset-6: 20px;
+  --font-size-preset-7: 18px;
+  --font-size-preset-8: 16px;
+  --font-size-preset-9: 16px;
+  --font-size-preset-10: 14px;
+
+  --line-height-tight: 110%;
+  --line-height-relaxed: 120%;
+  --line-height-normal: 130%;
+  --line-height-loose: 140%;
+  --line-height-very-loose: 150%;
+}
+
+
+
+
+@layer utilities {
+
+  .text-preset-1 {
+    font-size: var(--font-size-preset-1);
+    line-height: 110%;
+    letter-spacing: -2px;
+    font-weight: 800;
+  }
+
+  .text-preset-1-tablet {
+    font-size: var(--font-size-preset-1-tablet);
+    line-height: 110%;
+    letter-spacing: -2px;
+    font-weight: 800;
+  }
+
+  .text-preset-1-mobile {
+    font-size: var(--font-size-preset-1-mobile);
+    line-height: 110%;
+    letter-spacing: -2px;
+    font-weight: 800;
+  }
+
+  .text-preset-2 {
+    font-size: var(--font-size-preset-2);
+    line-height: 120%;
+    letter-spacing: -2px;
+    font-weight: 800;
+  }
+
+  .text-preset-2-mobile {
+    font-size: var(--font-size-preset-2-mobile);
+    line-height: 120%;
+    letter-spacing: -2px;
+    font-weight: 800;
+  }
+
+  .text-preset-3 {
+    font-size: var(--font-size-preset-3);
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+
+  .text-preset-4 {
+    font-size: var(--font-size-preset-4);
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+
+  .text-preset-5 {
+    font-size: var(--font-size-preset-5);
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+  }
+
+  .text-preset-6 {
+    font-size: var(--font-size-preset-6);
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    font-weight: 500;
+  }
+
+  .text-preset-7 {
+    font-size: var(--font-size-preset-7);
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+  }
+
+  .text-preset-8 {
+    font-size: var(--font-size-preset-8);
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+  }
+
+  .text-preset-9 {
+    font-size: var(--font-size-preset-9);
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+  }
+
+  .text-preset-10 {
+    font-size: var(--font-size-preset-10);
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+  }
+
+
+}
+
+
+@layer components {}
+
+
+@layer base {
+  body {
+    @apply px-4 md:px-8 lg:px-16 bg-neutral-100 text-neutral-800;
+  }
+
+  .navbar-link {
+    @apply py-2 px-2
+  }
+
+  .btn {
+    @apply bg-neutral-900 text-white block rounded-xl text-center py-1
+  }
+
+
+
+
+}
