@@ -1,14 +1,21 @@
-import React, { createContext } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
+import data from "../helper/data.json"
 
 
 const RecipeContext = createContext()
 
-const RecipeProvider = ({children}) => {
+export const RecipeProvider = ({children}) => {
+
+const [recipes, setRecipes] = useState(data)
+
+
+console.log(recipes)
+console.log(data)
 
 
     
   return (
-    <RecipeContext.Provider value={{}}>
+    <RecipeContext.Provider value={{recipes}}>
         {children}
     </RecipeContext.Provider>
   )
