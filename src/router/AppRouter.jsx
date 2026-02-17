@@ -15,7 +15,7 @@ const AppRouter = () => {
             <Route path='/about' element={<About/>} />
             <Route path='/recipes' element={<Recipes/>} />
             </Routes>
-            {/* <Footer/> */}
+            <Footer/>
         </BrowserRouter>
     )
 }

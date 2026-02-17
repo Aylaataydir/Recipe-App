@@ -4,20 +4,20 @@
 
 @import "tailwindcss";
 
-/* 1. TEMA AYARLARI (Renkler, Fontlar, Breakpointler) */
+
 @theme {
-  /* --- SCREENS (Ekranlar) --- */
+  /* --- SCREENS --- */
   --breakpoint-mobile: 400px;
   --breakpoint-tablet: 768px;
   --breakpoint-desktop: 1280px;
 
   /* --- FONT FAMILY --- */
-  /* Varsayılan sans ailesini de güncelliyoruz */
+ 
   --font-sans: "Nunito", system-ui, sans-serif;
   --font-nunito: "Nunito", sans-serif;
   --font-nunito-sans: "Nunito Sans", sans-serif;
 
-  /* --- COLORS (Renkler) --- */
+  /* --- COLORS --- */
   /* Neutral */
   --color-neutral-0: #FFFFFF;
   --color-neutral-100: #F6F5F1;
@@ -51,8 +51,14 @@
   --line-height-normal: 130%;
   --line-height-loose: 140%;
   --line-height-very-loose: 150%;
-}
 
+
+   /* home bakground image  */
+
+   --background-image-home: url("./assets/images/pattern-squiggle-1.svg")
+
+
+}
 
 
 
@@ -158,7 +164,11 @@
 
 @layer base {
   body {
-    @apply px-4 md:px-8 lg:px-16 bg-neutral-100 text-neutral-800;
+    @apply  bg-neutral-100 text-neutral-800 bg-home bg-no-repeat bg-auto bg-position-[left_80%_top_-2%] lg:bg-position-[100%_20%];
+  }
+
+  .app {
+    @apply px-4 md:px-8 lg:px-16
   }
 
   .navbar-link {

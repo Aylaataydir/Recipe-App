@@ -6,7 +6,7 @@ function App() {
  
 
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='app max-w-7xl mx-auto'>
      <AppRouter/>
     </div>
   )

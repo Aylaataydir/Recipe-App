@@ -7,10 +7,14 @@ import img2 from "../assets/images/icon-minimum-fuss.svg"
 import img3 from "../assets/images/icon-search-in-seconds.svg"
 import imgBuilt from "../assets/images/image-home-real-life-large.webp"
 import BaseCard from '../components/BaseCard'
+import Footer from '../components/Footer'
+import BrowseRecipesCard from '../components/BrowseRecipesCard'
+
+
 
 const Home = () => {
   return (
-    <div>
+    <div className=" " >
 
       {/* HEADER */}
 
@@ -61,19 +65,25 @@ const Home = () => {
           title="Built for real life"
           desc={
             <>
-              Cooking shouldn’t be complicated. These recipes come in under 
-               <span className="relative">
-                <span className="relative "> 30 minutes 
-                 </span>
+              Cooking shouldn’t be complicated. These recipes come in under
+              <span className="relative">
+                <span className="relative "> 30 minutes
+                </span>
                 <div className='absolute bg-orang-500 w-25 h-3 bottom-0 left-1 rounded -z-100'></div>
               </span> of active time, fit busy schedules, and taste good enough to repeat.
             </>
           }
           desc2="Whether you’re new to the kitchen or just need fresh ideas, we’ve got you covered."
         />
-
-
       </div>
+
+      {/* browse recipe section  */}
+
+      <BrowseRecipesCard />
+
+      {/* FOOTER  */}
+
+      <Footer />
 
 
     </div>
